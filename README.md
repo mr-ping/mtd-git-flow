@@ -75,8 +75,8 @@ MTD版本管理系统的分支管理策略（工作流）采用AVH扩展版本�
 
 
 
-#### 注：如因合作开发，需要共享"支持分支"，请依照下列建议操作：
+## 注：如因合作开发，需要共享"支持分支"，请依照下列建议操作：
 
-1. 使用 `git flow feature publish branch-name` 将分支推送至远端服务；
-2. 使用 `git flow feature track branch-name` 对远端分支进行追踪（其他checkout, pull, rebase, diff等操作详见上方各自命令文档）；
+1. 创建者使用 `git flow feature publish branch-name` (命令中'feature'可根据需要替换为其他支持分支)将分支推送至远端服务；
+2. 协作者在完成 *git-flow* 初始化前提下，使用 `git flow feature track branch-name` (命令中'feature'可根据需要替换为其他支持分支)对远端分支进行追踪（其他如`checkout`, `pull`, `rebase`, `diff` 等操作方法，详见上方各自命令文档）；
 3. 完成本功能开发后请将相应分支从远端及本地删除。

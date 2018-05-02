@@ -34,6 +34,7 @@ MTD版本管理系统的分支管理策略（工作流）采用AVH扩展版本�
 
 3. 待功能开发完成后，请使用 `git flow featrue finish branch-name --no-ff` 命令将此分支并入 *develop_flow* 分支，并删除此功能分支。
 
+相关命令文档：https://github.com/petervanderdoes/gitflow-avh/wiki/Reference:-git-flow-feature
 
 
 ## 测试阶段的分支使用——"release"分支
@@ -77,7 +78,5 @@ MTD版本管理系统的分支管理策略（工作流）采用AVH扩展版本�
 #### 注：如因合作开发，需要共享"支持分支"，请依照下列建议操作：
 
 1. 使用 `git flow feature publish branch-name` 将分支推送至远端服务；
-2. 使用 `git flow feature track branch-name` 对远端分支进行追踪（其他checkout, pull, rebase, diff等操作详见文档）；
+2. 使用 `git flow feature track branch-name` 对远端分支进行追踪（其他checkout, pull, rebase, diff等操作详见上方各自命令文档）；
 3. 完成本功能开发后请将相应分支从远端及本地删除。
-
-相关命令文档：https://github.com/petervanderdoes/gitflow-avh/wiki/Reference:-git-flow-feature

@@ -45,7 +45,7 @@ MTD版本管理系统的分支管理策略（工作流）采用AVH扩展版本�
 2. 使用 `git flow release publish version-code` 命令将其推送至远端服务，供开发人员协作使用。
 3. 开发人员请使用 `git flow release track`  &  `git flow relase checkout`  &  `git flow relase pull` 等命令进行分支操作。详情请参考文档。
 4. 测试期间的bug修复工作于此分支行中进行，bug修复完成后可随时并入 `develop_flow` 分支当中，以便于新的下游分支同步。
-5. 测试结束后，请使用 `git flow release finish version-code --ff-master` 命令将发布分支同时合并入 *develop_flow* 和 *master* 分支中，并将此发布分支删除。
+5. 测试结束后，请使用 `git flow release finish version-code -p --ff-master` 命令将发布分支同时合并入 *develop_flow* 和 *master* 分支中并推送至远端，且同时将此发布分支删除。
 
 相关命令文档：https://github.com/petervanderdoes/gitflow-avh/wiki/Reference:-git-flow-release
 
